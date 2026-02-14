@@ -3,73 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profil Pribadi</title>
+
+    <title>APLIKASI 1</title>
+    <meta name="description" content="Profil Abdylla Adhiyasa Nugroho - System Administrator, Linux Enthusiast, dan Guru Teknologi Informasi di Kudus. Spesialis server, cloud, dan infrastruktur.">
+    <meta name="keywords" content="Abdylla, System Administrator, Guru IT, Linux, Cloud Computing, Server, Kudus">
+    <meta name="author" content="Abdylla Adhiyasa Nugroho">
+
+    <meta property="og:title" content="Abdylla Adhiyasa Nugroho - System Administrator">
+    <meta property="og:description" content="System Administrator, Linux Enthusiast & IT Teacher">
+    <meta property="og:image" content="https://fotoabdyllas3bucket123.s3.us-east-1.amazonaws.com/abdyllaan.png">
+    <meta property="og:type" content="profile">
+
     <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #f2f4f7;
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, sans-serif;
         }
 
-        .container {
-            max-width: 600px;
-            margin: 50px auto;
-            background-color: #ffffff;
-            padding: 24px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+        }
+
+        .card {
+            background: #ffffff;
+            width: 100%;
+            max-width: 420px;
+            padding: 32px;
+            border-radius: 16px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
             text-align: center;
         }
 
-        img {
-            width: 150px;
-            height: 150px;
+        .profile-img {
+            width: 140px;
+            height: 140px;
             border-radius: 50%;
             object-fit: cover;
-            margin-bottom: 16px;
+            border: 4px solid #2a5298;
+            margin-bottom: 20px;
         }
 
         h1 {
-            margin: 10px 0 5px;
-            color: #333;
+            font-size: 22px;
+            margin-bottom: 6px;
+            color: #222;
         }
 
-        h3 {
-            margin: 0 0 20px;
+        h2 {
+            font-size: 15px;
+            font-weight: 500;
             color: #666;
-            font-weight: normal;
-        }
-
-        p {
-            color: #555;
-            line-height: 1.6;
+            margin-bottom: 20px;
         }
 
         .info {
-            text-align: left;
             margin-top: 20px;
+            text-align: left;
+            font-size: 14px;
+            color: #444;
         }
 
         .info p {
-            margin: 6px 0;
+            margin: 8px 0;
+        }
+
+        .info span {
+            font-weight: 600;
+            color: #1e3c72;
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                margin: 20px;
+                padding: 24px;
+            }
         }
     </style>
 </head>
+
 <body>
 
-    <div class="container">
-        <img src="https://fotoabdyllas3bucket123.s3.us-east-1.amazonaws.com/abdyllaan.png" alt="Foto Profil">
+    <main class="card">
+        <img class="profile-img" 
+             src="https://fotoabdyllas3bucket123.s3.us-east-1.amazonaws.com/abdyllaan.png" 
+             alt="Foto Profil Abdylla Adhiyasa Nugroho">
 
         <h1>Abdylla Adhiyasa Nugroho</h1>
-        <h3>System Administrator & Teacher</h3>
-        <div class="info">
-            <p><strong>Email:</strong> abdyllaan@gmail.com</p>
-            <p><strong>No. HP:</strong> 08964xxxxxx</p>
-            <p><strong>Pekerjaan:</strong> Guru</p>
-            <p><strong>Alamat:</strong> Kudus</p>
-        </div>
-    </div>
+        <h2>System Administrator & IT Teacher</h2>
+
+        <section class="info">
+            <p><span>Email:</span> abdyllaan@gmail.com</p>
+            <p><span>No. HP:</span> 08964xxxxxx</p>
+            <p><span>Pekerjaan:</span> Guru TJKT</p>
+            <p><span>Lokasi:</span> Kudus, Indonesia</p>
+            <p><span>Github:</span> github.com/abdyllaan</p>
+        </section>
+    </main>
 
 </body>
 </html>
